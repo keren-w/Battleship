@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href="https://fonts.googleapis.com/css?family=Saira:400,700&effect=anaglyph" rel="stylesheet")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js")
+  body
+    block content
+    script(src="/javascripts/server-communicator.js")
+    script(src="/javascripts/login.js")
+    script(src="/javascripts/drawer.js")
+    script(src="/javascripts/game-mng.js")

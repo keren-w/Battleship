@@ -1,0 +1,43 @@
+extends layout
+
+block content
+
+  div#content-container
+    h1.font-effect-anaglyph= title
+    div#costumize
+      div#username
+      div#your-turn Your turn
+  div.around
+    div#login-container
+      lable#user-lable 
+        span Username:
+        input(type="text" id="nick" value="")
+      button(type="button" id="submit-username" class="submit" value="Submit username") Send
+    div#users-container
+        span Choose a user to play with: 
+          br
+        select#user-selection(multiple)
+        br
+        button(type="button" id="submit-user-selection" class="submit" value="Submit username") Send
+    div#accept-game
+      p Get ready to play with 
+        span#requester
+        br
+        button(type="button" id="accept" value="accept") Okay
+    div#please-wait
+      p 
+        | Please wait until 
+        span#target-user 
+        |  accepts the game...
+    div#go-modal-container
+      div#game-over
+        h2 Game over!
+        p The winner is 
+          span#winner
+        | !
+        div#play-again
+          p continue playing
+          button(type="button" id="finish-game") OK
+  div#game-container
+    canvas#game-canvas
+  

@@ -1,0 +1,90 @@
+body {
+  color: white;
+  margin: 0;
+  font-family: 'Saira', sans-serif;
+  background: url("../images/waterBG.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  /* background-size: 100% auto; */
+}
+
+a {
+  color: #00B7FF;
+}
+
+#content-container {
+  size: 100%;
+  margin: 30px 8vw 10px;
+}
+
+#login-container, #users-container, #accept-game, #please-wait {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10%;
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+
+#game-container {
+  display: none;
+  margin: 0 auto;
+}
+
+#your-turn {
+  color: rgb(249, 87, 47);
+  display: none;
+}
+
+#game-over {
+  display: none;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10%;
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+
+h1 {
+  color: #9ebced;
+  display: inline-block;
+  margin: 0;
+}
+
+#costumize {
+  float: right;
+}
+
+.around {
+  max-width: 45%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+#user-lable {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nick {
+  width: 60%;
+}
+
+.submit {
+  float: right;
+  margin-top: 10px;
+}
+
+#winner {
+  color: rgb(39, 73, 90);
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+#play-again {
+  display: flex;
+  justify-content: space-between;
+}
