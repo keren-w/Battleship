@@ -1,5 +1,5 @@
 function connectUser() {
-    var socket = io.connect('http://localhost:3000');
+    var socket = io.connect('http://battleship.kerenwebhome.com');
 
     socket.on("loginResult", function (login) {
         loginFuncs.checkLogin(login);

@@ -14,7 +14,6 @@ module.exports = function (io) {
     });
   });
 
-
   //socket.io Connection
   io.on("connection", function (socket) {
     console.log('A user connected with socket id: ' + socket.id);
